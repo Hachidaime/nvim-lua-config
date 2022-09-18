@@ -17,6 +17,8 @@ require('which-key-config')
 require('lsp-config.language-servers')
 require('lsp-config.cmp')
 
+require('lspsaga-config')
+
 require('colorizer-config')
 
 require('dashboard-config')

@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'onsails/lspkind.nvim'
+  use 'glepnir/lspsaga.nvim'
 
   use 'norcalli/nvim-colorizer.lua'  -- Colorizer
 
