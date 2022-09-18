@@ -5,22 +5,22 @@ return require('packer').startup(function(use)
   use 'shaunsingh/nord.nvim'
   use 'folke/tokyonight.nvim'
 
-  use 'kyazdani42/nvim-web-devicons'  -- Web Devicon
+  use 'kyazdani42/nvim-web-devicons' -- Web Devicon
 
-  use 'nvim-lualine/lualine.nvim'  -- Lualine
-  use 'akinsho/bufferline.nvim'  -- Bufferline
+  use 'nvim-lualine/lualine.nvim' -- Lualine
+  use 'akinsho/bufferline.nvim' -- Bufferline
 
-  use 'kyazdani42/nvim-tree.lua'  -- Nvim-tree
+  use 'kyazdani42/nvim-tree.lua' -- Nvim-tree
 
-  use 'nvim-treesitter/nvim-treesitter'  -- Tree-Sitter
+  use 'nvim-treesitter/nvim-treesitter' -- Tree-Sitter
   use 'windwp/nvim-ts-autotag'
   use 'p00f/nvim-ts-rainbow'
   use 'windwp/nvim-autopairs'
 
-  use 'folke/which-key.nvim'  -- Which-key
+  use 'folke/which-key.nvim' -- Which-key
 
   use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'  -- Telescope
+  use 'nvim-telescope/telescope.nvim' -- Telescope
 
   -- LSP & Completion
   use 'williamboman/nvim-lsp-installer'
@@ -37,11 +37,14 @@ return require('packer').startup(function(use)
 
   use 'jose-elias-alvarez/null-ls.nvim'
 
-  use 'norcalli/nvim-colorizer.lua'  -- Colorizer
+  use 'norcalli/nvim-colorizer.lua' -- Colorizer
 
-  use 'glepnir/dashboard-nvim'  -- Dashboard
+  use 'glepnir/dashboard-nvim' -- Dashboard
 
-  use 'akinsho/toggleterm.nvim'  -- Toggle Term
+  use 'akinsho/toggleterm.nvim' -- Toggle Term
 
-  use 'numToStr/Comment.nvim'  -- Comment
+  use 'numToStr/Comment.nvim' -- Comment
+
+  use 'folke/zen-mode.nvim' -- Zen mode
+  use 'folke/twilight.nvim' -- Twilight
 end)

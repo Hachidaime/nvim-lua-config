@@ -29,6 +29,8 @@ require('toggleterm-config')
 
 require('comment-config')
 
+require('zen-mode-config')
+require('twilight-config')
+
 require('settings')
 require('mappings')
-

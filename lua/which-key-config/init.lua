@@ -21,7 +21,7 @@ local mappings = {
     g = { ":Telescope live_grep<CR>", "Live Grep" },
     b = { ":Telescope buffers<CR>", "Find Buffers" },
     h = { ":Telescope help_tags<CR>", "Help Tags" },
-    r = { ":Telescope oldfiles<CR>", "Recent Files" },
+    r = { ":Telescope oldfiles<CR>", "Recent Files" }
   },
   h = { "Move Window Left" },
   j = { "Move Window Down" },
@@ -30,10 +30,10 @@ local mappings = {
   t = {
     t = { ":ToggleTerm<cr>", "Split Below" },
     b = { ":ToggleTerm direction=tab<cr>", "Open in New Tab" },
-    f = { toggle_float, "Floating Terminal" },
+    f = { toggle_float, "Floating Terminal" }
   },
-  o = {':set paste<CR>m`o<Esc>``:set nopaste<CR>j', "Insert New Line Below"},
-  O = {':set paste<CR>m`O<Esc>``:set nopaste<CR>k', "Insert New Line Above"},
+  o = { ':set paste<CR>m`o<Esc>``:set nopaste<CR>j', "Insert New Line Below" },
+  O = { ':set paste<CR>m`O<Esc>``:set nopaste<CR>k', "Insert New Line Above" },
   p = {
     name = "Packer",
     r = { ":PackerClean<cr>", "Remove Unused Plugins" },
@@ -49,8 +49,13 @@ local mappings = {
     i = { ":LspInfo<cr>", "Connected Language Servers" },
     k = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
     K = { "<cmd>Lspsaga hover_doc<cr>", "Hover Commands" },
-    w = { '<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>', "Add Workspace Folder" },
-    W = { '<cmd>lua vim.lsp.buf.remove_workspace_folder()<cr>', "Remove Workspace Folder" },
+    w = {
+      '<cmd>lua vim.lsp.buf.add_workspace_folder()<cr>', "Add Workspace Folder"
+    },
+    W = {
+      '<cmd>lua vim.lsp.buf.remove_workspace_folder()<cr>',
+      "Remove Workspace Folder"
+    },
     l = {
       '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<cr>',
       "List Workspace Folders"
@@ -65,8 +70,12 @@ local mappings = {
     n = { '<cmd>Lspsaga diagnostic_jump_next<cr>', "Go To Next Diagnostic" },
     N = { '<cmd>Lspsaga diagnostic_jump_prev<cr>', "Go To Previous Diagnostic" }
   },
+  z = {
+    name = "Zen Mode",
+    z = { ":ZenMode<cr>", "Zen Mode" },
+    t = { ":Twilight<cr>", "Twilight" }
+  }
 }
 local opts = { prefix = '<leader>' }
 
 wk.register(mappings, opts)
-

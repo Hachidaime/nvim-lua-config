@@ -4,12 +4,17 @@ local formatting = null_ls.builtins.formatting
 
 null_ls.setup({
   sources = {
-    formatting.prettier, formatting.black, formatting.shfmt,
-    formatting.clang_format, formatting.cmake_format,
-    formatting.lua_format.with({
+    formatting.prettier.with({
+      filetypes = {
+        "javascript", "javascriptreact", "typescript", "typescriptreact", "vue",
+        "css", "scss", "less", "html", "json", "jsonc", "yaml", "markdown",
+        "graphql", "handlebars", "svelte"
+      }
+    }), formatting.black, formatting.shfmt, formatting.clang_format,
+    formatting.cmake_format, formatting.lua_format.with({
       extra_args = {
-        '--no-keep-simple-function-one-line', '--no-break-after-operator', '--column-limit=80',
-        '--break-after-table-lb', '--indent-width=2'
+        '--no-keep-simple-function-one-line', '--no-break-after-operator',
+        '--column-limit=80', '--break-after-table-lb', '--indent-width=2'
       }
     }), formatting.isort, formatting.codespell.with({ filetypes = { 'markdown' } })
   },
@@ -22,8 +27,8 @@ null_ls.setup({
         callback = function()
           -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
           vim.lsp.buf.format({ asycn = true })
-        end,
+        end
       })
     end
-  end,
+  end
 })
