@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
   use 'onsails/lspkind.nvim'
   use 'glepnir/lspsaga.nvim'
 
+  use 'jose-elias-alvarez/null-ls.nvim'
+
   use 'norcalli/nvim-colorizer.lua'  -- Colorizer
 
   use 'glepnir/dashboard-nvim'  -- Dashboard

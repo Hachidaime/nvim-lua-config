@@ -19,6 +19,8 @@ require('lsp-config.cmp')
 
 require('lspsaga-config')
 
+require('null-ls-config')
+
 require('colorizer-config')
 
 require('dashboard-config')
@@ -29,3 +31,4 @@ require('comment-config')
 
 require('settings')
 require('mappings')
+
