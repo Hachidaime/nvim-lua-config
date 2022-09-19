@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim' -- Telescope
+  use 'lewis6991/gitsigns.nvim' -- Git Signs
 
   -- LSP & Completion
   use 'williamboman/nvim-lsp-installer'

@@ -11,6 +11,7 @@ require('tree-sitter-config')
 require('autopairs-config')
 
 require('telescope-config')
+require('gitsigns-config')
 
 require('which-key-config')
 
