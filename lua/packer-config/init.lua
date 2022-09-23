@@ -4,6 +4,8 @@ return require('packer').startup(function(use)
   -- Color Scheme
   use 'shaunsingh/nord.nvim'
   use 'folke/tokyonight.nvim'
+  use 'glepnir/zephyr-nvim'
+  use 'marko-cerovac/material.nvim'
 
   use 'kyazdani42/nvim-web-devicons' -- Web Devicon
 
@@ -48,6 +50,7 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim' -- Toggle Term
 
   use 'numToStr/Comment.nvim' -- Comment
+  use 'Djancyp/better-comments.nvim'
 
   use 'folke/zen-mode.nvim' -- Zen mode
   use 'folke/twilight.nvim' -- Twilight

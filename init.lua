@@ -1,6 +1,6 @@
 require('packer-config')
 
-require('colors-config.tokyonight')
+require('colors-config.material')
 
 require('lualine-config')
 require('bufferline-config')
@@ -35,3 +35,4 @@ require('twilight-config')
 
 require('settings')
 require('mappings')
+

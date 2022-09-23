@@ -1,7 +1,9 @@
+local lspconfig = require("lspconfig")
 local null_ls = require('null-ls')
 
 local formatting = null_ls.builtins.formatting
 
+-- require 'lspconfig'["null-ls"].setup({
 null_ls.setup({
   sources = {
     formatting.prettier.with({
@@ -32,3 +34,4 @@ null_ls.setup({
     end
   end
 })
+

@@ -38,7 +38,7 @@ db.custom_center = {
   }, {
     icon = ' ',
     desc = 'Quit                   ',
-    action = 'Telescope oldfiles',
+    action = 'q',
     shortcut = '\\ q  '
   }
 }

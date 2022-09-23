@@ -48,5 +48,22 @@ lsp_installer.on_server_ready(function(server)
   -- Specify the default options which we'll use to setup all servers
   local default_opts = { on_attach = on_attach, capabilities = capabilities }
 
+  -- if server == 'html' then
+  --   local html_opts = {
+  --     init_options = {
+  --       provideFormatter = false,
+  --     }
+  --   }
+  --   table.insert(default_opts, html_opts)
+  -- end
+
   server:setup(default_opts)
 end)
+
+require 'lspconfig'.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    provideFormatter = false,
+  }
+}

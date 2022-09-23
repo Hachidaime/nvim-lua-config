@@ -1,7 +1,11 @@
-require("bufferline").setup{
+require("bufferline").setup {
   options = {
     modified_icon = '●',
     close_icon = '',
-    separator_style = 'slant',
+    separator_style = 'thin',
+    indicator = {
+      icon = '█ ',
+      style = 'icon'
+    }
   },
 }
