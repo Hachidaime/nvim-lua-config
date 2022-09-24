@@ -1,6 +1,5 @@
 local db = require('dashboard')
 db.custom_header = {
-  '', '',
   '                  ███████████                                                   ',
   '               ████         █████                                               ',
   '            ███                 ███                     ██████████              ',
@@ -17,7 +16,6 @@ db.custom_header = {
   '            ███                 ███                                             ',
   '              █████          ████                                               ',
   '                  ███████████                                                   ',
-  '', ''
 }
 db.custom_center = {
   {
@@ -42,6 +40,14 @@ db.custom_center = {
     shortcut = '\\ q  '
   }
 }
+db.custom_footer = {
+  "There are two ways to be fooled.",
+  "One is to believe what isn't true; the other is to refuse to believe what is true.",
+  "~ Soren Kierkegaard"
+}
+db.center_pad = 3
+db.footer_pad = 3
+db.hide_statusline = true
 -- db.custom_header = {
 --     '                            ..                              ',
 --     '                          ...oo  .                          ',
