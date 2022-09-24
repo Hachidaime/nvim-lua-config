@@ -210,6 +210,13 @@ ins_left {
 
 -- Add components to right sections
 ins_right {
+  function()
+    return "WDS: " .. vim.fn.wordcount().words
+  end,
+  color = { fg = colors.OperaMauve }
+}
+
+ins_right {
   'o:encoding', -- option component same as &encoding in viml
   fmt = string.upper, -- I'm not sure why it's upper case either ;)
   cond = conditions.hide_in_width,
@@ -254,6 +261,7 @@ ins_right {
   end,
   padding = { left = 1 }
 }
+
 
 -- Now don't forget to initialize lualine
 lualine.setup(config)
