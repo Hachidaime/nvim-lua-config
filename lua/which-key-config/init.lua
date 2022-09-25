@@ -11,6 +11,7 @@ local mappings = {
   b = { ":NvimTreeFocus<CR>", "Focus on the tree" },
   w = { ":w<CR>", "Save" },
   q = { ":q<CR>", "Quit" },
+  Q = { ":Q<CR>", "Force Quit" },
   x = { ":bd<CR>", "Close Buffer" },
   -- r = { ":Reload<CR>", "Reload file" },
   r = { ":luafile %<CR>", "Reload file" },
