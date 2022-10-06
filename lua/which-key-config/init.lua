@@ -48,6 +48,7 @@ local mappings = {
   L = {
     name = "LSP",
     i = { ":LspInfo<cr>", "Connected Language Servers" },
+    x = { ":LspInstallInfo<cr>", "Connected Language Servers" },
     k = { "<cmd>lua vim.lsp.buf.signature_help()<cr>", "Signature Help" },
     K = { "<cmd>Lspsaga hover_doc<cr>", "Hover Commands" },
     w = {
