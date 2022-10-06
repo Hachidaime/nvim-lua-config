@@ -43,7 +43,7 @@ db.custom_footer = {
   "One is to believe what isn't true; the other is to refuse to believe what is true.",
   "~ Søren Kierkegaard"
 }
-db.header_pad = 3
+db.header_pad = 8
 db.center_pad = 3
-db.footer_pad = 3
+db.footer_pad = 8
 db.hide_statusline = true
