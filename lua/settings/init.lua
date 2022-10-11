@@ -2,8 +2,6 @@ local set = vim.opt
 
 set.number = true
 set.relativenumber = true
-set.cursorline = true
-set.colorcolumn = '81,121'
 
 set.expandtab = true
 set.smarttab = true
@@ -24,4 +22,6 @@ set.termguicolors = true
 
 set.hidden = true
 
+set.cursorline = true
+set.colorcolumn = '81,121'
 set.guicursor = 'i:hor50'
