@@ -27,7 +27,7 @@ local on_attach = function(client, bufnr)
 end
 
 local servers = {
-  "cssls", "emmet_ls", "pyright", "sumneko_lua", "tsserver", "intelephense", "html"
+  "cssls", "emmet_ls", "pyright", "sumneko_lua", "tsserver", "intelephense", "html", "marksman"
 }
 
 ---@diagnostic disable-next-line: undefined-global
