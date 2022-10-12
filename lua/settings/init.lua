@@ -25,3 +25,7 @@ set.hidden = true
 set.cursorline = true
 set.colorcolumn = '81,121'
 set.guicursor = 'i:hor50'
+
+vim.cmd([[
+  hi Comment guifg=#00ff00
+]])
