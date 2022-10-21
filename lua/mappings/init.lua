@@ -11,4 +11,5 @@ map('n', '<leader>j', '<C-w>j', opts)
 map('n', '<leader>k', '<C-w>k', opts)
 map('n', '<leader>l', '<C-w>l', opts)
 
-
+map('i', 'jk', '<ESC>', opts)
+map('i', 'kj', '<ESC>', opts)

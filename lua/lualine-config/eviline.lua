@@ -116,7 +116,7 @@ ins_left {
   end
 }
 
-ins_left {
+--[[ ins_left {
   function()
     return ''
   end,
@@ -126,7 +126,7 @@ ins_left {
     return { fg = mode_color[vim.fn.mode()] }
   end,
   padding = { left = 0, right = 1 } -- We don't need space before this
-}
+} ]]
 
 ins_left {
   -- mode component
@@ -134,7 +134,7 @@ ins_left {
     -- return ''
     -- return ''
     -- return ''
-    return ''
+    return ' '
   end,
   color = function()
     -- auto change color according to neovims mode
@@ -252,7 +252,8 @@ ins_right {
 
 ins_right {
   function()
-    return '██'
+    -- return '██'
+    return '██'
   end,
   -- color = { fg = colors.blue },
   color = function()
