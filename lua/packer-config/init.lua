@@ -26,7 +26,9 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim' -- Git Signs
 
   -- LSP & Completion
-  use 'williamboman/nvim-lsp-installer'
+  -- use 'williamboman/nvim-lsp-installer'
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -54,4 +56,9 @@ return require('packer').startup(function(use)
 
   use 'folke/zen-mode.nvim' -- Zen mode
   use 'folke/twilight.nvim' -- Twilight
+
+  use 'lervag/vimtex' -- Vimtex
+
+  use 'kevinhwang91/nvim-hlslens' -- hlslens
+  use 'petertriho/nvim-scrollbar' -- Nvim Scrollbar
 end)

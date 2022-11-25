@@ -18,7 +18,8 @@ null_ls.setup({
         '--no-keep-simple-function-one-line', '--no-break-after-operator',
         '--column-limit=80', '--break-after-table-lb', '--indent-width=2'
       }
-    }), formatting.isort, formatting.codespell.with({ filetypes = { 'markdown' } })
+    }), formatting.isort, formatting.codespell.with({ filetypes = { 'markdown' } }),
+    formatting.latexindent
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
@@ -34,4 +35,3 @@ null_ls.setup({
     end
   end
 })
-
