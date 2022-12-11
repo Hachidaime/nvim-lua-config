@@ -6,6 +6,9 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'glepnir/zephyr-nvim'
   use 'marko-cerovac/material.nvim'
+  use 'ayu-theme/ayu-vim'
+  use 'NLKNguyen/papercolor-theme'
+  use 'NTBBloodbath/doom-one.nvim'
 
   use 'kyazdani42/nvim-web-devicons' -- Web Devicon
 
@@ -61,4 +64,11 @@ return require('packer').startup(function(use)
 
   use 'kevinhwang91/nvim-hlslens' -- hlslens
   use 'petertriho/nvim-scrollbar' -- Nvim Scrollbar
+
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function()
+      vim.fn["mkdp#util#install"]()
+    end
+  })
 end)

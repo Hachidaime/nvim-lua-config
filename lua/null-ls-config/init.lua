@@ -6,11 +6,11 @@ local formatting = null_ls.builtins.formatting
 -- require 'lspconfig'["null-ls"].setup({
 null_ls.setup({
   sources = {
-    formatting.prettier.with({
+    formatting.prettierd.with({
       filetypes = {
         "javascript", "javascriptreact", "typescript", "typescriptreact", "vue",
-        "css", "scss", "less", "html", "json", "jsonc", "yaml", "markdown",
-        "graphql", "handlebars", "svelte"
+        "css", "scss", "less", "html", "json", "jsonc", "yaml", "graphql",
+        "handlebars", "svelte", "markdown"
       }
     }), formatting.black, formatting.shfmt, formatting.clang_format,
     formatting.cmake_format, formatting.lua_format.with({
